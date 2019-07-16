@@ -1,0 +1,41 @@
+.tweet-card {
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  padding: 20px 20px;
+  .user-photo {
+    border-radius: 50%;
+    img {
+      border-radius: 50%;
+    }
+  }
+  .user-screen-name:before{
+    content: "@";
+    padding-left: 6px;
+  }
+  .timestamp:before{
+    content: "-";
+    padding: 0 6px;
+  }
+  .tweet-info {
+    padding-left: 12px;
+    width: 100%;
+  }
+  .top-content {
+    display: flex;
+    padding-bottom: 12px;
+    width: 100%;
+  }
+  .mid-content {
+    padding-bottom: 12px;
+    padding-right: 24px;
+    p {
+      word-break: break-all;
+    }
+  }
+  .bottom-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 250px;
+    padding-right: 24px;
+  }
+}

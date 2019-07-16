@@ -1,0 +1,3 @@
+export const GET_TRENDS_PENDING = "Search/GET_TRENDS_PENDING";
+export const GET_TRENDS_SUCCESS = "Search/GET_TRENDS_SUCCESS";
+export const GET_TRENDS_FAILURE = "Search/GET_TRENDS_FAILURE";

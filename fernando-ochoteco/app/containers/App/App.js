@@ -10,11 +10,10 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Switch, Route } from 'react-router-dom';
 
-import HomePage from 'containers/HomePage/Loadable';
-import FeaturePage from 'containers/FeaturePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
-import Header from 'components/Header';
-import Footer from 'components/Footer';
+import ComponentsPage from 'containers/ComponentsPage/Loadable';
+
+import MainPage from 'containers/MainPage/Loadable';
 import './style.scss';
 
 const App = () => (
@@ -25,13 +24,11 @@ const App = () => (
     >
       <meta name="description" content="A React.js Boilerplate application" />
     </Helmet>
-    <Header />
     <Switch>
-      <Route exact path="/" component={HomePage} />
-      <Route path="/features" component={FeaturePage} />
+      <Route path="/components" component={ComponentsPage} />
+      <Route path="/" component={MainPage} />
       <Route path="" component={NotFoundPage} />
     </Switch>
-    <Footer />
   </div>
 );
 

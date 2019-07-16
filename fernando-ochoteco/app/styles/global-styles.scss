@@ -1,5 +1,6 @@
 html,
 body {
+  font-size: 14px;
   height: 100%;
   width: 100%;
 }
@@ -12,6 +13,17 @@ body.fontLoaded {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 #app {
   background-color: #fafafa;
   min-height: 100%;
@@ -22,4 +34,42 @@ p,
 label {
   font-family: Georgia, Times, 'Times New Roman', serif;
   line-height: 1.5em;
+}
+
+button.action {
+  border-radius: 50%;
+  margin: 0 5px;
+  min-width: unset;
+  color: #FFF;
+  -webkit-box-shadow: 0px 0px 4px 2px rgba(180,180,180,1);
+  -moz-box-shadow: 0px 0px 4px 2px rgba(180,180,180,1);
+  box-shadow: 0px 0px 4px 2px rgba(180,180,180,1);
+  &.like-btn {
+    background-color: #E91E63;
+  }
+  &.sync-btn {
+    background-color: #4CAF50;
+  }
+  &.comment-btn {
+    background-color: #40A9F4;
+  }
+  &.search-btn {
+    background-color: #40A9F4;
+    border-radius: 5px;
+    height: auto;
+    padding: 10px 20px;
+    width: auto;
+  }
+  &.md {
+    height: 55px;
+    width: 55px;
+  }
+  &.lg {
+    height: 55px;
+    width: 55px;
+  }
+  &.sm {
+    height: 55px;
+    width: 55px;
+  }
 }
